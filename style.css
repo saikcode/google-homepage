@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+nav {
+  background: rgb(196, 146, 42);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 146, 42, 1) 0%,
+    rgba(180, 199, 25, 1) 100%
+  );
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  padding-right: 1rem;
+}
+
+main {
+  background-image: url(/img/pexels-jeffrey-czum-2501965.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* object-fit: contain; */
+  min-width: 80vw;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+}
+
+#gl {
+  flex-basis: 2rem;
+}
+#search {
+  margin-top: 1rem;
+  flex-basis: 2rem;
+  border-radius: 1rem;
+  min-width: 50vh;
+  max-width: 100vh;
+}
+
+footer {
+  background: rgb(196, 146, 42);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 146, 42, 1) 0%,
+    rgba(180, 199, 25, 1) 100%
+  );
+  padding: 0.5rem;
+}
+
+a {
+  color: rgb(55, 48, 48);
+}
