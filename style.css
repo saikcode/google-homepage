@@ -2,29 +2,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-size: 62.5%; */
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+.cont-nav {
+  height: 60px;
 }
 
 .nav {
   display: flex;
   list-style-type: none;
+  justify-content: flex-end;
+  padding: 15px;
+  align-items: center;
+  align-content: flex-start;
 }
 
-.hero {
-  /* display: flex; */
+.nav > * {
+  margin-left: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+
+.cont-hero {
+  /* border: 3px solid pink; */
+  height: 100vh;
+  margin-top: 120px;
+}
+
+@media (max-height: 650px) {
+  .cont-hero {
+    margin-top: 30px;
+  }
+}
+
+.cont-glogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid green; */
+  margin: 15px 0;
+}
+
+.cont-search-full {
+  margin: 20px;
+  display: flex;
+}
+
+.cont-search {
+  border: 2px solid rgb(162, 162, 162);
+  border-radius: 2em;
+  text-align: center;
+  padding: 7px 0;
+  width: 560px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cont-search:hover {
+  box-shadow: 0 0 3px 2px rgba(49, 49, 49, 0.2);
+}
+
+.searchbox {
+  padding: 3px;
+  width: 430px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 0 30px;
+}
+
+.glass-icon {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.microphone-icon {
+  position: absolute;
+  top: 5px;
+  height: 25px;
+  width: 25px;
+  right: 10px;
+}
+
+.cont-btns {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.cont-btns > * {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.cont-btns > *:hover {
+  box-shadow: 0 0 5px rgba(49, 49, 49, 0.2);
 }
 
 /* Footer content */
 
-.footer {
-  /* display: flex; */
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.cont-footer {
+  height: auto;
 }
 
 .footer1 {
@@ -41,15 +147,16 @@
 .footer2 {
   display: flex;
   width: 100vw;
-  /* border: 2px dotted goldenrod; */
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: rgb(240, 240, 240);
 }
 
+.footer2 a:hover {
+  text-decoration: underline;
+}
+
 .list-left {
-  /* position: absolute; */
-  /* border: 1px solid green; */
   display: flex;
   align-items: center;
 }
@@ -61,7 +168,6 @@
 }
 
 .list-right {
-  /* border: 1px solid rebeccapurple; */
   display: flex;
   align-items: center;
 }
