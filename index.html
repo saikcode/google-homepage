@@ -4,44 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
     <title>Google homepage</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#" id="gmailimg">Gmail</a></li>
-            <li><a href="#" id="appimg">Images</a></li>
-            <li>
-              <a href="#"
-                ><img src="img/play.png" alt="Play Button" id="playimg"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/panda.png" alt="Profile Picture" id="profileimg"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <img
-          id="gl"
-          src="img/googlelogo_color_272x92dp.png"
-          alt="Google logo"
-        />
-        <input type="search" name="search" id="search" />
-        <button id="searchbtn">Search</button>
-        <button id="luckybtn">Feeling lucky</button>
-      </main>
-      <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-        sequi.
-      </footer>
+      <div class="container cont-nav">
+        <header>
+          <nav>
+            <ul class="nav">
+              <li><img src="img/panda.png" alt="" /></li>
+              <li><img src="img/play.png" alt="" /></li>
+              <li>Images</li>
+              <li>Gmail</li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="container cont-hero">
+        <main class="hero">
+          <img src="img/googlelogo_color_272x92dp.png" alt="" />
+          <input type="search" />
+          <div class="btns">
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
+          </div>
+        </main>
+      </div>
+      <div class="container cont-footer">
+        <footer class="footer">
+          <div class="footer1">
+            <p>Romania</p>
+          </div>
+          <div class="footer2">
+            <div class="list-left">
+              <a href="#">About</a>
+              <a href="#">Advertising</a>
+              <a href="#">Business</a>
+              <a href="#">How search works</a>
+            </div>
+            <div class="list-right">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Settings</a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

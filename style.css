@@ -1,65 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+}
+
 .container {
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
 }
 
-nav {
-  background: rgb(196, 146, 42);
-  background: linear-gradient(
-    90deg,
-    rgba(196, 146, 42, 1) 0%,
-    rgba(180, 199, 25, 1) 100%
-  );
-  padding: 0.5rem;
-}
-
-nav ul {
+.nav {
   display: flex;
-  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.hero {
+  /* display: flex; */
+}
+
+/* Footer content */
+
+.footer {
+  /* display: flex; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer1 {
+  border: 1px solid rgb(184, 184, 184);
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+}
+
+.footer1 p {
+  margin: 10px 20px;
+  color: rgb(58, 58, 58);
+}
+
+.footer2 {
+  display: flex;
+  width: 100vw;
+  /* border: 2px dotted goldenrod; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(240, 240, 240);
+}
+
+.list-left {
+  /* position: absolute; */
+  /* border: 1px solid green; */
+  display: flex;
   align-items: center;
 }
 
-nav ul li {
-  padding-right: 1rem;
+.list-left > * {
+  margin: 10px 20px;
+  text-decoration: none;
+  color: rgb(58, 58, 58);
 }
 
-main {
-  background-image: url(/img/pexels-jeffrey-czum-2501965.jpg);
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-  /* background-size: cover; */
-  /* object-fit: contain; */
-  min-width: 80vw;
-  min-height: 92vh;
+.list-right {
+  /* border: 1px solid rebeccapurple; */
   display: flex;
-  flex-direction: column;
-  /* border: 2px solid red; */
-  justify-content: center;
   align-items: center;
 }
 
-#gl {
-  flex-basis: 2rem;
-}
-#search {
-  margin-top: 1rem;
-  flex-basis: 2rem;
-  border-radius: 1rem;
-  min-width: 50vh;
-  max-width: 100vh;
+.list-right > * {
+  margin: 10px 20px;
+  text-decoration: none;
+  color: rgb(58, 58, 58);
 }
 
-footer {
-  background: rgb(196, 146, 42);
-  background: linear-gradient(
-    90deg,
-    rgba(196, 146, 42, 1) 0%,
-    rgba(180, 199, 25, 1) 100%
-  );
-  padding: 0.5rem;
-}
-
-a {
-  color: rgb(55, 48, 48);
+@media (max-width: 1100px) {
+  .footer2 {
+    justify-content: space-around;
+  }
 }
